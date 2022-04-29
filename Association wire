@@ -1,0 +1,80 @@
+
+public class phoneType
+{
+
+public static void main(String[] args) {
+	// TODO Auto-generated method stub
+
+	
+}
+}
+
+
+class phone
+{
+	void makeCall()
+	{
+	}
+
+	void declineCall()
+	{
+	}
+
+	void readSMS() 
+	{
+	}
+
+	void sendSMS() 
+	{
+	}
+}
+
+class basicPhone extends phone {
+	
+	void basicGame() 
+	{
+
+	}
+}
+
+class cameraPhone extends basicPhone {
+
+	void photoClick() 
+	{
+
+	}
+
+	void videoShoot() 
+	{
+
+	}
+}
+
+class touchPhone extends cameraPhone {
+
+		void touchFunction() 
+		{
+
+		}
+}
+class androidPhone extends touchPhone {
+			void apps() 
+			{
+				
+			}
+
+			void fileTransfer() 
+			{
+				
+			}
+}
+
+class smartPhone extends androidPhone 
+	{
+	void 	internetAcess()
+		{}
+	void 	hdGames()
+		{}
+	}
+
+	
