@@ -1,0 +1,87 @@
+
+public class BankTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		BankAccount obj =new BankAccount(100,"amar",5000);
+	//	obj.setBankAccount();
+		obj.printBankAccount();
+		System.out.println("------------------------------");
+		obj.withDraw(500);
+		obj.printBankAccount();
+		System.out.println("------------------------------");
+		obj.getBalance();
+		
+	}
+
+}
+class BankAccount
+{
+	int accountNumber;
+	String accountHolderName;
+	double accountBalance;
+	double MobileNumber;
+	BankAccount(int x, String y, double z, String mobileNumber)
+	{
+	this(x,y,z);
+	this.mobileNumber = mobileNumber;
+	}	
+		
+	BankAccount( int x, String y, double z)
+	{
+		if (x<0)
+		{
+			throw new RuntimeException("account no cannot be negative .... terminating..");
+					}
+		else 
+			
+			accountNumber=x;
+		if(y==null)
+		{throw new RuntimeException("name cannot be null .... terminating..");
+		}
+else 
+
+accountHolderName=y;
+		if(z<0)
+		{
+			
+		throw new RuntimeException("account no cannot be negative .... terminating..");
+	}
+		else
+			accountBalance=z;
+
+		
+		
+	}
+	void printBankAccount()
+	{
+		System.out.println("Account no is :"+accountNumber);
+		System.out.println("Name is :"+accountHolderName);
+		System.out.println("Balance is :"+accountBalance);
+		System.out.println("Balance is :"+MobileNumber);
+		System.out.println("----------------------------------");
+	}
+	
+	void setMobileNumber(String m)
+	{
+		mobileNumber = m;
+	}
+	
+	void setAccountHolderName(String m)
+	{
+		accountHolderName = m;
+	}
+	double withDraw(double amountToWithdraw)
+	{
+		System.out.println("amount withdraw in progress....");
+		System.out.println("balance befor withdraw...."+accountBalance);
+		accountBalance=accountBalance-amountToWithdraw;
+		System.out.println("withdraw is done " +amountToWithdraw);
+		return accountBalance;
+	}
+	double getBalance()
+	{
+		return accountBalance;
+	}
+}
