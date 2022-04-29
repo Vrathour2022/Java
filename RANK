@@ -1,0 +1,105 @@
+
+public class Rank {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Merit m = new Merit();
+		m.meritClass();
+		System.out.println("-------------------------------");
+		firstClass fc = new firstClass();
+		fc.firstRank(65);
+		System.out.println("-------------------------------");
+		 pwd p = new pwd();
+		 p.passWithDifficulty(55);
+		 System.out.println("-------------------------------");
+		 fail f = new fail();
+		 f.repatTheClass();
+
+	}
+}
+
+class Merit {
+	public void meritClass() {
+		int x=85;
+		if (x > 80) {
+			System.out.println("Ram got merit with percentage " + x);
+		} 
+		else if (x>=60 && x<= 80) {
+			System.out.println("Ram got first division with percentage " + x);
+		} 
+		else if (x>=45 && x<= 59) {
+			System.out.println("Ram passed with difficulty with percentage  " + x);
+		} 
+	
+		else
+			System.out.println("Ram failed the exam with percentage " + x);
+
+	}
+}
+
+class firstClass {
+	void firstRank(int x) {
+		
+		if (x > 80) {
+			System.out.println("Shyam got merit with percentage " + x);
+		} 
+		else if (x>=60 && x<= 80) {
+			System.out.println("Shyam got first division with percentage " + x);
+		} 
+		else if (x>=45 && x<= 59) {
+			System.out.println("shyam passed with difficulty with percentage  " + x);
+		} 
+	
+		else
+			System.out.println("shyam failed the exam with percentage " + x);
+	
+
+	}
+
+}
+
+class pwd 
+{
+	int passWithDifficulty(int x ) 	{
+		
+		if (x > 80) {
+		System.out.println("Papu got merit with percentage " + x);
+	} 
+	else if (x>=60 && x<= 80) {
+		System.out.println("Papu got first division with percentage " + x);
+	} 
+	else if (x>=45 && x<= 59) {
+		System.out.println("Papu passed with difficulty with percentage  " + x);
+	} 
+
+	else
+		System.out.println("Papu fail ho gaya " + x);
+		return x;
+
+
+}
+
+}
+
+class fail {
+	public int repatTheClass() {
+	int x =10;
+	{
+		if (x > 80) {
+			System.out.println("Papu got merit with percentage " + x);
+		} 
+		else if (x>=60 && x<= 80) {
+			System.out.println("Papu got first division with percentage " + x);
+		} 
+		else if (x>=45 && x<= 59) {
+			System.out.println("Papu passed with difficulty with percentage  " + x);
+		} 
+
+		else
+			System.out.println("Papu fail ho gaya " );
+		System.out.println("his percentage is  " + x );
+			return x;
+			
+		}
+}
+}
