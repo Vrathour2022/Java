@@ -1,0 +1,49 @@
+	class phone { 
+		void makeCall() {}
+		void declineCall(){}
+		void readSMS(){}
+		void sendSMS(){}
+	}
+	class basicPhone extend phone()
+	{
+		basicGame()
+		{
+
+		}
+	}
+	class cameraPhone extends basicPhone 
+	{
+		 
+		photoClick() 
+		{
+
+		}
+		videoShoot() {
+			
+		}
+
+	class touchPhone extends cameraPone 
+	{
+		
+
+		touchFunction() {
+
+		}
+		
+
+	class androidPhone extends touchPone 
+	{
+		apps() {}
+		fileTransfer(){}
+
+		
+		
+	class smartPhone extends androidPhone 
+		{
+			internetAcess()
+			{}
+			hdGames()
+			{}
+
+		}
+				}
