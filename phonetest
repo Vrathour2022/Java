@@ -1,0 +1,46 @@
+
+public class PhoneTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Phone myPhone = new Phone();
+		myPhone.dial();
+		byte speedNumber=123;
+		myPhone.dial(speedNumber);
+		String name= "Papu";
+		myPhone.dial(name);
+		myPhone.dial("Papu","Sherry");
+		myPhone.dial(speedNumber,"Papu");
+		myPhone.dial("Papu", speedNumber);
+	}
+
+}
+class Phone
+{
+	void dial()
+	{
+		System.out.println("dialing nowhere.......");
+	}
+	
+	void dial(byte speedDial)
+	{
+		System.out.println("dialing ......."+speedDial);
+	}
+
+	void dial(String name)
+	{
+		System.out.println("dialing ......."+name);
+	}
+	void dial(byte b, String name)
+	{
+		System.out.println("CONFERENCE CALL WITH  ....... "+b+" and  "+name);
+	}
+	void dial(String name, String name2 )
+	{
+		System.out.println("CONFERENCE CALL WITH ....... "+name+" and "+name2);
+	}
+	void dial(String name,byte b)
+	{
+		System.out.println("CONFERENCE CALL WITH  ....... "+name+" and "+b);
+	}
+}
