@@ -133,7 +133,11 @@ class Earth extends God
 		System.out.println("      ******      ");
 		System.out.println("    **********    ");
 		System.out.println("  *************   ");
-		System.out.println("******************");
+		System.out.println(" ****************");
+		System.out.println("  *************   ");
+		System.out.println("    **********    ");
+		System.out.println("      ******      ");
+		System.out.println("        **        ");
 		
 	}
 	
