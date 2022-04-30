@@ -1,0 +1,84 @@
+
+public class AbstractTest {
+	public static void main(String[] args) {
+		//Instrument i = new Instrument();
+		//MusicalInstrument i = new MusicalInstrument();
+		//StringBasedMusicalInstrument i = new StringBasedMusicalInstrument();
+		sitar g = new sitar();
+		g.utilize();
+		g.play();
+		g.tuneStrings();
+		g.pluck();
+		g.eGuitar();
+		g.PlayViolin();
+		g.PlaySitar();
+	}
+}
+abstract class Instrument {
+	abstract void utilize();
+}
+abstract class MusicalInstrument extends Instrument
+{
+	abstract void play();
+}
+abstract class StringBasedMusicalInstrument extends MusicalInstrument
+{
+	abstract void tuneStrings();
+}
+class Guitar extends StringBasedMusicalInstrument
+{
+
+	//@Override
+	void tuneStrings() {
+		System.out.println("Tuning the Guitar strings");
+	}
+
+	//@Override
+	void play() {
+		System.out.println("Playing the guitar...");
+	}
+
+	//@Override
+	void utilize() {
+		System.out.println("Utilizing the guitar....");
+	}
+	
+	
+	void pluck() {
+		System.out.println("Plucking the guitar....");
+	}
+}
+
+class ElectronicGuitar extends Guitar
+{
+	void eGuitar() {
+		System.out.println("--------------------------");
+		System.out.println("Playing the Electric Guitar...");
+		System.out.println("Tuning the Electric Guitar strings");
+		System.out.println("Plucking the Electric Guitar....");
+	}
+}
+
+class violin extends ElectronicGuitar
+{
+	void PlayViolin()
+	{
+		
+		System.out.println("--------------------------");
+		System.out.println("Using a Bow to play violin .......................*******");
+		System.out.println("Playing the violin...");
+		System.out.println("Tuning the violin");
+		System.out.println("Plucking the violin....");
+	}
+}
+class sitar extends violin
+{
+	void PlaySitar()
+	{
+		
+		System.out.println("--------------------------");
+		System.out.println("Playing the sitar...");
+		System.out.println("Tuning the sitar");
+		System.out.println("Plucking the sitar....");
+	}
+}
