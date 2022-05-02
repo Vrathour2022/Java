@@ -1,0 +1,94 @@
+import java.io.InputStream;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+import java.lang.StringIndexOutOfBoundsException;
+import java.lang.NullPointerException;
+
+public class DivideTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MyCalculator my =new MyCalculator();
+		try {
+			System.out.println("division test Begin :" );
+		Scanner scan = new Scanner(System.in);
+		System.out.println("division test 1 " );
+		System.out.println("input number  1 :" );
+		int x = scan.nextInt();
+		System.out.println("input number 2 :" );
+		int y = scan.nextInt();
+		my.divide(x,y);
+		String str="SBI";
+		System.out.println("Character at 5th location :"+str.charAt(3) );
+		System.out.println("********************");
+		String str2="CAT";
+		System.out.println(str2.toLowerCase());
+		System.out.println("********************");
+		int array[] = {10,20,30,40};
+		System.out.println("araay at the 4th value is : "+ array[2]);
+		}
+		catch(InputMismatchException e) {
+			System.out.println("Please supply number....");
+					
+		}
+		catch(StringIndexOutOfBoundsException s) {
+			System.out.println("check the number of characters");
+					
+		}
+		catch(NullPointerException a)
+		{
+			System.out.println("check the number in array");
+		}
+		
+
+		System.out.println("division test 2 :" );
+		my.divide(70, 5);
+		System.out.println("division test 3 :" );
+		my.divide(150, 12);
+		System.out.println("division test 4 :" );
+		my.divide(40, 3);
+		System.out.println("division test 5 :" );
+		my.divide(45, 5);
+		System.out.println("division test 6 :" );
+		my.divide(80, 0);
+		}
+
+	
+
+
+	private static Scanner Scanner(InputStream in) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
+class MyCalculator
+{
+	 void divide(int x, int y)
+	{
+		
+		System.out.println("X "+x);
+		System.out.println("y "+y);
+		System.out.println("dividing "+x+" by " +y);
+		
+		
+		try
+		{
+			int z = x / y;
+			System.out.println("z "+z);
+		}
+		catch(ArithmeticException e) {
+			System.out.println("Problem1 : "+e.getMessage());
+		}
+		catch(RuntimeException e) {
+			System.out.println("Problem2 : "+e.getMessage());
+		}
+		catch(Exception e) {
+			System.out.println("Problem3 : "+e.getMessage());
+		}
+		catch(Throwable e) {
+			System.out.println("Problem4 : "+e.getMessage());
+		}
+		System.out.println("********************");
+		//System.out.println("\n");
+	}}
