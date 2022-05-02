@@ -1,0 +1,76 @@
+
+public class medicalInstrument {
+	public static void main(String[] args) {
+		//Instrument i = new Instrument();
+		//MusicalInstrument i = new MusicalInstrument();
+		//StringBasedMusicalInstrument i = new StringBasedMusicalInstrument();
+		Cutter c = new Cutter();
+		c.utilize();
+		c.use();
+		c.sterilize();
+		c.inject();
+		c.stich();
+		c.scare();
+		c.surgery();
+	}
+}
+abstract class Instrument {
+	abstract void utilize();
+}
+abstract class medicalInst extends Instrument
+{
+	abstract void use();
+}
+abstract class SurgicalInstrument extends medicalInst
+{
+	abstract void sterilize();
+}
+class needle extends SurgicalInstrument
+{
+
+	//@Override
+	void inject() {
+		System.out.println("Needle is used to inject medicine .............. ");
+	}
+
+	//@Override
+	void stich() {
+		System.out.println("Needle is used to stich the wounds ...........");
+	}
+
+	//@Override
+	void scare() {
+		System.out.println("Needle is used to scare kids also ..........");
+	}
+
+	//@Override
+	void sterilize() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	//@Override
+	void use() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	//@Override
+	void utilize() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	
+}
+
+class Cutter extends needle
+{
+	void surgery() {
+		System.out.println("--------------------------");
+		System.out.println("cutter is used in surgery.......");
+		System.out.println("A new cutter is used in every surgery to avoid infection ");
+		
+	}
+}
